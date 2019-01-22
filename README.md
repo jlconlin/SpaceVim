@@ -1,0 +1,2 @@
+# SpaceVim
+Personal SpaceVim configuration.
