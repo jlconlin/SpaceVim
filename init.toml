@@ -18,25 +18,40 @@
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
+    statusline_separator = "nil"
+    statusline_inactive_separator = "nil"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_display_mode = false
 
-# Enable autocomplete layer
-[[layers]]
-name = 'autocomplete'
-auto-completion-return-key-behavior = "complete"
-auto-completion-tab-key-behavior = "smart"
+# call SpaceVim#layers#load('games')
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+  name = 'games'
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto-completion-return-key-behavior = "complete"
+  auto-completion-tab-key-behavior = "smart"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name = 'checkers'
+  enable = false
 
 [[layers]]
   name = "lang#latex"
 
 [[layers]]
   name = "git"
+
+[[layers]]
+  name = "tmux"
+
+[[layers]]
+  name = "lang#markdown"
